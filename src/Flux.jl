@@ -27,4 +27,6 @@ include("layers/stateless.jl")
 include("layers/basic.jl")
 include("layers/recurrent.jl")
 
+include("batches/Batches.jl")
+
 end # module
