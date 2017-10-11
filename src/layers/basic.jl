@@ -14,7 +14,7 @@ on a given input.
 `Chain` also supports indexing and slicing, e.g. `m[2]` or `m[1:end-1]`.
 `m[1:3](x)` will calculate the output of the first three layers.
 """
-type Chain
+mutable struct Chain
   layers::Vector{Any}
   Chain(xs...) = new([xs...])
 end
